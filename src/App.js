@@ -1,11 +1,10 @@
 import './App.css';
+import Header from './Component/Header';
 
 function App() {
   return (
     <div className="App">
-        <header>
-          <h1>Phone Directory</h1>
-        </header>
+        <Header />
         <div>
           <button>Add</button>
           <div>
