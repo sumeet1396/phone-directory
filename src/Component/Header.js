@@ -12,7 +12,7 @@ class Header extends Component {
 
         return (
             <header style={headerStyle}>
-                <h1>Phone Directory</h1>
+                <h1>{this.props.heading}</h1>
             </header>    
         )
     }
