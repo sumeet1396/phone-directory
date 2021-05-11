@@ -3,20 +3,8 @@ import React from 'react'
 import Header from './Component/Header';
 
 class App extends React.Component {
-  render() {
 
-    let subscribers = [
-      {
-        id: 1,
-        name: "Shilpa Bhat",
-        phone: "8888888888"
-      },
-      {
-        id: 2,
-        name: "Srishti Gupta",
-        phone: "9999999999"
-      }
-    ];
+  render() {
 
     return (
       <div className="App">
@@ -29,7 +17,7 @@ class App extends React.Component {
               <span className="grid-item phone-heading">Phone</span>
             </div>
             {
-              subscribers.map(sub => {
+              this.props.subscribersLis.map(sub => {
                 return <div key={sub.id} className="grid-container">
                   <span className="grid-item">{sub.name}</span>
                   <span className="grid-item">{sub.phone}</span>

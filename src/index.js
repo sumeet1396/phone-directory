@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import AddSusbscriber from './AddSubscriber'
+import PhoneDirectory from './PhoneDirectory';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AddSusbscriber />
+    <PhoneDirectory />,
   </React.StrictMode>,
   document.getElementById('root')
 );
