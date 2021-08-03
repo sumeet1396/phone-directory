@@ -17,9 +17,7 @@ class AddSusbscriber extends Component {
 
     inputChangedHandler = (event) => {
         const {name, value} = event.target
-        this.setState({
-            [name]: value
-        });
+        this.setState({ [name]: value });
     }
 
     onFormSubmitted = (e) => {

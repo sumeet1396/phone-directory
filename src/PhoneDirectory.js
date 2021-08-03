@@ -15,7 +15,7 @@ class PhoneDirectory extends Component {
     deleteSubscriberHandler = (subscriberId) => {
         let subscribersList = this.state.subscribersList;
         let subscriberIndex = 0;
-        subscribersList.forEach(function (subscriber, index) {
+        subscribersList.map((subscriber, index) => {
             if (subscriber.id === subscriberId) {
                 subscriberIndex = index;
             }
@@ -34,7 +34,6 @@ class PhoneDirectory extends Component {
         }
         subscribersList.push(newSubscriber);
         this.setState({ subscribersList: subscribersList });
-        localStorage.setItem('Subscriber', subscribersList);
     }
 
     render() {
